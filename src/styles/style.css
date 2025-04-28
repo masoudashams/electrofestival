@@ -1,0 +1,198 @@
+/* Custom animations */
+@keyframes float {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-20px) translateX(10px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: rotate(90deg) translateY(0);
+    }
+    50% {
+      transform: rotate(90deg) translateY(-5px);
+    }
+  }
+  
+  /* Hero styles */
+  .hero-background {
+    transition: transform 1s ease;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(52, 144, 191, 0.7);
+  }
+  
+  .hero-content {
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Scroll button styles */
+  .scroll-button .bounce-arrow {
+    transform: rotate(90deg);
+    animation: bounce 1s infinite;
+  }
+  
+  /* Info box styles */
+  .info-box {
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  
+  .info-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-container {
+    overflow: hidden;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .video-thumbnail {
+    transition: transform 0.7s ease;
+  }
+  
+  .video-container:hover .video-thumbnail {
+    transform: scale(1.1);
+  }
+  
+  .video-overlay {
+    transition: opacity 0.3s ease;
+  }
+  
+  .video-container:hover .video-overlay {
+    opacity: 0;
+  }
+  
+  .play-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  /* Floating particles */
+  .floating-particle {
+    animation: float 15s infinite ease-in-out;
+    animation-delay: var(--delay, 0s);
+  }
+  
+  .floating-particle:nth-child(1) {
+    --delay: 0s;
+    animation-duration: 12s;
+  }
+  .floating-particle:nth-child(2) {
+    --delay: 1s;
+    animation-duration: 15s;
+  }
+  .floating-particle:nth-child(3) {
+    --delay: 2s;
+    animation-duration: 18s;
+  }
+  .floating-particle:nth-child(4) {
+    --delay: 3s;
+    animation-duration: 20s;
+  }
+  .floating-particle:nth-child(5) {
+    --delay: 4s;
+    animation-duration: 13s;
+  }
+  .floating-particle:nth-child(6) {
+    --delay: 5s;
+    animation-duration: 16s;
+  }
+  .floating-particle:nth-child(7) {
+    --delay: 0.5s;
+    animation-duration: 14s;
+  }
+  .floating-particle:nth-child(8) {
+    --delay: 1.5s;
+    animation-duration: 17s;
+  }
+  .floating-particle:nth-child(9) {
+    --delay: 2.5s;
+    animation-duration: 19s;
+  }
+  .floating-particle:nth-child(10) {
+    --delay: 3.5s;
+    animation-duration: 11s;
+  }
+  .floating-particle:nth-child(11) {
+    --delay: 4.5s;
+    animation-duration: 13s;
+  }
+  .floating-particle:nth-child(12) {
+    --delay: 5.5s;
+    animation-duration: 16s;
+  }
+  .floating-particle:nth-child(13) {
+    --delay: 0.2s;
+    animation-duration: 14s;
+  }
+  .floating-particle:nth-child(14) {
+    --delay: 1.2s;
+    animation-duration: 17s;
+  }
+  .floating-particle:nth-child(15) {
+    --delay: 2.2s;
+    animation-duration: 19s;
+  }
+  .floating-particle:nth-child(16) {
+    --delay: 3.2s;
+    animation-duration: 12s;
+  }
+  .floating-particle:nth-child(17) {
+    --delay: 4.2s;
+    animation-duration: 15s;
+  }
+  .floating-particle:nth-child(18) {
+    --delay: 5.2s;
+    animation-duration: 18s;
+  }
+  .floating-particle:nth-child(19) {
+    --delay: 0.7s;
+    animation-duration: 13s;
+  }
+  .floating-particle:nth-child(20) {
+    --delay: 1.7s;
+    animation-duration: 16s;
+  }
+  
+  /* Navbar link hover effects */
+  .navbar-link {
+    position: relative;
+  }
+  
+  .navbar-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Button hover effects */
+  .button-hover {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .button-hover:hover {
+    transform: scale(1.05);
+  }
+  
